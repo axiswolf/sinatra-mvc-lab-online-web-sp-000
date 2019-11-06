@@ -50,10 +50,12 @@
         words.map do |word|
           if vowel?(word[0])
             piglatin = word + "way"
-          elsif vowel?(word[1])
-            piglatin = word[1, 0] + word[0] + "ay"
+          # elsif vowel?(word[1])
+          #   piglatin = word[1, 0] + word[0] + "ay"
           else
-            piglatin = word[/^([^aeiouAEIOU]+)/]
+            prefix = word[/^([^aeiouAEIOU]+)/]
+            suffix = word[prefix.length,0]
+            piglatin = suffix + prefix + "ay"
         end
       end
       #   return word if %w[and an in].include?(word) #one syllable exceptions
