@@ -47,7 +47,7 @@
 
       def piglatinize(user_input)
         words = user_input.split
-        words.map do |word|
+        pl_words = words.map do |word|
           if vowel?(word[0])
             word + "way"
           # elsif vowel?(word[1])
@@ -59,6 +59,7 @@
             word + prefix + "ay"
           end
         end
+        pl_words.join(" ")
       end
       #   return word if %w[and an in].include?(word) #one syllable exceptions
       #   letters = word.split("")
