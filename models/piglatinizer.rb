@@ -36,6 +36,10 @@
           vowel.include?(word[0])
       end
 
+      def split_phrase(phrase)
+        array_of_words = phrase.split
+      end
+      
       def piglatinize(phrase)
 
       end
