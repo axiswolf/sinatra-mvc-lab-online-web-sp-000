@@ -6,11 +6,6 @@
           vowel.include?(word[0])
       end
 
-      def const?(word)
-        const = '/[^aeiouAEIOU]/'
-        const.include?(word[0])
-      end
-
       def piglatinize(user_input)
         words = user_input.split
         pl_words = words.map do |word|
