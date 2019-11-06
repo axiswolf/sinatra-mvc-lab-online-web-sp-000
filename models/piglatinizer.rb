@@ -7,7 +7,7 @@
       end
 
       def piglatinize(user_phrase)
-        words = user_input.split
+        words = user_phrase.split
         pl_words = words.map do |word|
           if vowel?(word[0])
             word + "way"
