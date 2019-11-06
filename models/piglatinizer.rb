@@ -52,7 +52,7 @@
             piglatin = word + "way"
           elsif vowel?(word[1])
             piglatin = word[1, 0] + word[0] + "ay"
-          else 
+          else
             piglatin = word[/^([^aeiouAEIOU]+)/]
         end
       end
