@@ -39,7 +39,7 @@
       def split_phrase(phrase)
         array_of_words = phrase.split
       end
-      
+
       def piglatinize(phrase)
 
       end
