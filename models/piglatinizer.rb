@@ -40,11 +40,11 @@
         array_of_words = phrase.split
       end
 
-      def phrase?(phrase)
+      def phrase?(user_input)
 
       end
 
-      def piglatinize(phrase)
+      def piglatinize(user_input)
 
       end
       #   return word if %w[and an in].include?(word) #one syllable exceptions
