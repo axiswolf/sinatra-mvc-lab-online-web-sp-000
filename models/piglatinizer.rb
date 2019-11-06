@@ -1,5 +1,5 @@
     class PigLatinizer
-      attr_accessor :user_input
+      attr_accessor :user_phrase
 
       def vowel?(word)
           vowel = 'aeiouAEIOU'
