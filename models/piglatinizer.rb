@@ -35,9 +35,9 @@
           vowel = 'aeiouAEIOU'
           word.include?(vowel)
       end
-      
+
       def piglatinize(phrase)
-        
+
       end
       #   return word if %w[and an in].include?(word) #one syllable exceptions
       #   letters = word.split("")
@@ -50,13 +50,13 @@
       #   end
       #   letters.join
       # end
-      # 
+      #
       # def to_pig_latin(text)
       #   words = text.split(" ")
       #   words.map! {|word| piglatinize(word)}
       #   words.join(" ")
       # end
-      # 
+      #
       # def vowel?(letter)
       #   letter.downcase
       #   letter == "o" || letter == "e" || letter == "a" || letter == "i" || letter == "u"
