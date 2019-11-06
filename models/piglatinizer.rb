@@ -33,7 +33,7 @@
 
       def vowel?(word)
           vowel = 'aeiouAEIOU'
-          word.include?(vowel[0])
+          word.include?(word[0])
       end
 
       def piglatinize(phrase)
