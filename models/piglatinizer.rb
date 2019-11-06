@@ -36,12 +36,13 @@
           vowel.include?(word[0])
       end
 
-      def split_phrase(phrase)
-        array_of_words = phrase.split
+      def const?(word)
+        const = '/[^aeiouAEIOU]/'
+        const.include?(word[0])
       end
 
-      def phrase?(user_input)
-
+      def split_phrase(phrase)
+        array_of_words = phrase.split
       end
 
       def piglatinize(user_input)
