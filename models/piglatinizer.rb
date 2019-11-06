@@ -56,6 +56,7 @@
             prefix = word[/^([^aeiouAEIOU]+)/]
             suffix = word[prefix.length,0]
             piglatin = suffix + prefix + "ay"
+          end
         end
       end
       #   return word if %w[and an in].include?(word) #one syllable exceptions
