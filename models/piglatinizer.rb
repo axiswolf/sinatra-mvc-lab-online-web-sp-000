@@ -6,7 +6,7 @@
           vowel.include?(word[0])
       end
 
-      def piglatinize(user_input)
+      def piglatinize(user_phrase)
         words = user_input.split
         pl_words = words.map do |word|
           if vowel?(word[0])
