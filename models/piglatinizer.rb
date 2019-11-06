@@ -56,7 +56,7 @@
             prefix = word[/^([^aeiouAEIOU]+)/]
             # word.slice!(prefix.length)
             # suffix = word[/^[^aeiouAEIOU]+(.*)\1/]
-            suffix = word[prefix.length..0]
+            suffix = word[prefix.length..word.length]
             suffix + prefix + "ay"
           end
         end
