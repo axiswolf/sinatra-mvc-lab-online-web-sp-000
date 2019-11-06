@@ -29,7 +29,7 @@
     #   sentence
     # end
     class PigLatinizer
-      attr_accessor :phrase
+      attr_accessor :user_input
 
       def vowel?(word)
           vowel = 'aeiouAEIOU'
@@ -38,6 +38,10 @@
 
       def split_phrase(phrase)
         array_of_words = phrase.split
+      end
+
+      def phrase?(phrase)
+
       end
 
       def piglatinize(phrase)
