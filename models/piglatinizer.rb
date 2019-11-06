@@ -54,9 +54,10 @@
           #   piglatin = word[1, 0] + word[0] + "ay"
           else
             prefix = word[/^([^aeiouAEIOU]+)/]
-            word.slice!(prefix.length)
+            # word.slice!(prefix.length)
             # suffix = word[/^[^aeiouAEIOU]+(.*)\1/]
-            word + prefix + "ay"
+            suffix = word[prefix.length, 0]
+            suffix + prefix + "ay"
           end
         end
         pl_words.join(" ")
