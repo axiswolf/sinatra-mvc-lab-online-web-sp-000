@@ -1,7 +1,7 @@
     class PigLatinizer
       attr_reader :user_phrase
 
-      def vowel?(word)
+      def vowel?(user_phrase)
           vowel = 'aeiouAEIOU'
           vowel.include?(word[0])
       end
